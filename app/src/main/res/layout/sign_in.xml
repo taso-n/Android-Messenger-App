@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="fill_vertical"
+    android:gravity="center"
+    android:paddingBottom="@dimen/margin"
+    tools:context=".authentication.SingIn">
+
+    <ImageView
+        android:id="@+id/authAvatar"
+        android:layout_width="@dimen/auth_avt"
+        android:layout_height="@dimen/auth_avt"
+        android:src="@drawable/avatar_image_placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/signInUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/textview_background"
+        android:ems="12"
+        android:hint="@string/enter_nickname"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="@dimen/small_margin"
+        android:paddingVertical="@dimen/small_padding"
+        android:textAlignment="center"
+        android:textColor="@color/text" />
+
+    <EditText
+        android:id="@+id/signInPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:background="@drawable/textview_background"
+        android:ems="12"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="@dimen/small_margin"
+        android:paddingVertical="@dimen/small_padding"
+        android:textAlignment="center"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="@string/sing_in" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/notReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_padding"
+        android:text="@string/not_registered"
+        android:textColor="@color/gray" />
+
+    <Button
+        android:id="@+id/signInUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:text="@string/sign_up"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gray"
+        app:strokeColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>
