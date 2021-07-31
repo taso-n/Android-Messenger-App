@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".authentication.SignUpActivity">
+
+    <ImageView
+        android:layout_width="@dimen/auth_avt"
+        android:layout_height="@dimen/auth_avt"
+        android:id="@+id/signInAvt"
+        android:src="@drawable/avatar_image_placeholder" />
+
+    <EditText
+        android:id="@+id/signUpUsername"
+        android:layout_width="@dimen/input_width"
+        android:layout_height="@dimen/input_height"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:hint="@string/enter_nickname"
+        android:background="@drawable/textview_background"
+        android:textSize="@dimen/font_size"
+        android:layout_marginTop="@dimen/margin"
+        android:inputType="text"
+        android:paddingHorizontal="@dimen/small_margin"
+        android:paddingVertical="@dimen/small_padding" />
+
+    <EditText
+        android:id="@+id/signUpPass"
+        android:layout_width="@dimen/input_width"
+        android:layout_height="@dimen/input_height"
+        android:textSize="@dimen/font_size"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:hint="@string/enter_password"
+        android:layout_marginTop="@dimen/small_margin"
+        android:background="@drawable/textview_background"
+        android:inputType="textPassword"
+        android:paddingHorizontal="@dimen/small_margin"
+        android:paddingVertical="@dimen/small_padding" />
+
+    <EditText
+        android:id="@+id/signUpProfession"
+        android:layout_width="@dimen/input_width"
+        android:layout_height="@dimen/input_height"
+        android:textSize="@dimen/font_size"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/small_margin"
+        android:background="@drawable/textview_background"
+        android:hint="@string/what_to_do"
+        android:paddingHorizontal="@dimen/small_margin"
+        android:paddingVertical="@dimen/small_padding"/>
+
+    <Button
+        android:id="@+id/signUpUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:layout_marginTop="@dimen/margin"
+        android:backgroundTint="@color/btn_blue" />
+
+</LinearLayout>
