@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".authentication.SignUpActivity">
+    tools:context=".authentication.SignUp">
 
     <ImageView
         android:layout_width="@dimen/auth_avt"
