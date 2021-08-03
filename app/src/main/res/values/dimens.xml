@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="msg_size">18sp</dimen>
+    <dimen name="font_size">16sp</dimen>
+    <dimen name="input_width">250dp</dimen>
+    <dimen name="input_height">40dp</dimen>
+    <dimen name="date">14sp</dimen>
+    <dimen name="auth_avt">150dp</dimen>
+    <dimen name="bar">85dp</dimen>
+    <dimen name="margin">32dp</dimen>
+    <dimen name="layout_margin">100dp</dimen>
+    <dimen name="chat_avatar">50dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="small_margin">16dp</dimen>
+    <dimen name="radius">25dp</dimen>
+    <dimen name="bottom_bar">60dp</dimen>
+</resources>

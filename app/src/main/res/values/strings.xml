@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Messenger App</string>
+    <string name="sing_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sign_up">Sign up</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="what_to_do">What I do</string>
+    <string name="search">Search</string>
+    <string name="not_registered">Not Registered?</string>
+    <string name="home">home</string>
+    <string name="settings">settings</string>
+    <string name="update">Update</string>
+    <string name="avatar">avatar</string>
 </resources>
