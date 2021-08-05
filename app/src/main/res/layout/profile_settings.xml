@@ -23,7 +23,7 @@
         android:textColor="@color/text"
         android:paddingHorizontal="@dimen/small_margin"
         android:layout_marginTop="@dimen/margin"
-        android:background="@drawable/textview_background"
+        android:background="@drawable/text_bckg"
         android:hint="@string/enter_email"
         android:inputType="textEmailAddress"
         android:paddingVertical="@dimen/small_padding"/>
@@ -35,7 +35,7 @@
         android:textAlignment="center"
         android:textColor="@color/text"
         android:layout_marginTop="@dimen/small_margin"
-        android:background="@drawable/textview_background"
+        android:background="@drawable/text_bckg"
         android:hint="@string/what_to_do"
         android:inputType="text"
         android:paddingHorizontal="@dimen/small_margin"

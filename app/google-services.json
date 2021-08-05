@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1081976226853",
+    "firebase_url": "https://chat-app-261b9-default-rtdb.firebaseio.com",
+    "project_id": "chat-app-261b9",
+    "storage_bucket": "chat-app-261b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081976226853:android:695ab35bf90dc3ecf8ebcc",
+        "android_client_info": {
+          "package_name": "ge.anikolaishvili.messengerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081976226853-3vqljaarg4p2vb1su5ghoealrs8b5r0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcPsDaC6UMpjS53-odThjzvVIVCwq4C68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081976226853-3vqljaarg4p2vb1su5ghoealrs8b5r0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

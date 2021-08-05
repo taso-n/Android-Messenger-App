@@ -5,6 +5,7 @@
     <dimen name="input_width">250dp</dimen>
     <dimen name="input_height">40dp</dimen>
     <dimen name="date">14sp</dimen>
+    <dimen name="contact_height">70dp</dimen>
     <dimen name="auth_avt">150dp</dimen>
     <dimen name="bar">85dp</dimen>
     <dimen name="margin">32dp</dimen>
@@ -14,4 +15,6 @@
     <dimen name="small_margin">16dp</dimen>
     <dimen name="radius">25dp</dimen>
     <dimen name="bottom_bar">60dp</dimen>
+    <dimen name="button_width">120dp</dimen>
+    <dimen name="radius_text">90dp</dimen>
 </resources>

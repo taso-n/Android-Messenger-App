@@ -20,7 +20,7 @@
         android:textAlignment="center"
         android:textColor="@color/text"
         android:hint="@string/enter_email"
-        android:background="@drawable/textview_background"
+        android:background="@drawable/text_bckg"
         android:textSize="@dimen/font_size"
         android:layout_marginTop="@dimen/margin"
         android:inputType="text"
@@ -36,7 +36,7 @@
         android:textColor="@color/text"
         android:hint="@string/enter_password"
         android:layout_marginTop="@dimen/small_margin"
-        android:background="@drawable/textview_background"
+        android:background="@drawable/text_bckg"
         android:inputType="textPassword"
         android:paddingHorizontal="@dimen/small_margin"
         android:paddingVertical="@dimen/small_padding" />
@@ -50,7 +50,7 @@
         android:textColor="@color/text"
         android:inputType="text"
         android:layout_marginTop="@dimen/small_margin"
-        android:background="@drawable/textview_background"
+        android:background="@drawable/text_bckg"
         android:hint="@string/what_to_do"
         android:paddingHorizontal="@dimen/small_margin"
         android:paddingVertical="@dimen/small_padding"/>
