@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".updateSettings.view.SettingsView" >
+    <ImageButton
+        android:id="@+id/settingsAvatar"
+        android:scaleType="fitXY"
+        android:background="@color/white"
+        android:layout_width="@dimen/auth_avt"
+        android:layout_height="@dimen/auth_avt"
+        android:src="@drawable/avatar_image_placeholder" />
+
+    <EditText
+        android:id="@+id/settingsEmail"
+        android:layout_width="@dimen/input_width"
+        android:layout_height="@dimen/input_height"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:paddingHorizontal="@dimen/small_margin"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/textview_background"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        android:paddingVertical="@dimen/small_padding"/>
+
+    <EditText
+        android:id="@+id/settingsProfession"
+        android:layout_width="@dimen/input_width"
+        android:layout_height="@dimen/input_height"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:layout_marginTop="@dimen/small_margin"
+        android:background="@drawable/textview_background"
+        android:hint="@string/what_to_do"
+        android:inputType="text"
+        android:paddingHorizontal="@dimen/small_margin"
+        android:paddingVertical="@dimen/small_padding" />
+    <Button
+        android:id="@+id/updateSettings"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:backgroundTint="@color/btn_blue"
+        android:text="@string/update"/>
+    <Button
+        android:id="@+id/settingsSignOut"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:text="@string/sign_out"
+        android:backgroundTint="@color/msg_background"
+        android:textColor="@color/gray"/>
+</LinearLayout>

@@ -9,7 +9,7 @@ import ge.anikolaishvili.messengerapp.MainActivity
 import ge.anikolaishvili.messengerapp.authentication.presenter.ISignInPresenter
 import ge.anikolaishvili.messengerapp.authentication.presenter.SingInPresenter
 
-class SingIn : AppCompatActivity(), IAuthView {
+class SignIn : AppCompatActivity(), IAuthView {
 
     private val presenter: ISignInPresenter = SingInPresenter(this)
     private lateinit var binding: SignInBinding

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
-    tools:context=".authentication.SingIn">
+    tools:context=".authentication.view.SignIn">
 
     <ImageView
         android:id="@+id/authAvatar"
@@ -19,13 +19,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <EditText
-        android:id="@+id/signInUsername"
+        android:id="@+id/signInEmail"
         android:layout_width="@dimen/input_width"
         android:layout_height="@dimen/input_height"
         android:textSize="@dimen/font_size"
         android:layout_marginTop="@dimen/margin"
         android:background="@drawable/textview_background"
-        android:hint="@string/enter_nickname"
+        android:hint="@string/enter_email"
         android:inputType="textPersonName"
         android:paddingHorizontal="@dimen/small_margin"
         android:paddingVertical="@dimen/small_padding"
