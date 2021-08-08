@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/small_margin"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/rcAvatar"
+        android:layout_width="@dimen/chat_avatar"
+        android:layout_height="@dimen/chat_avatar"
+        android:layout_marginStart="@dimen/small_margin"
+        android:src="@drawable/avatar_image_placeholder" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rcEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size"
+            tools:text="TextView" />
+
+        <TextView
+            android:id="@+id/rcText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_padding"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size"
+            tools:text="TextView" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rcDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/time_margin"
+        tools:text="TextView" />
+
+</LinearLayout>

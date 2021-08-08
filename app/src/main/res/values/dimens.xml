@@ -17,4 +17,5 @@
     <dimen name="bottom_bar">60dp</dimen>
     <dimen name="button_width">120dp</dimen>
     <dimen name="radius_text">90dp</dimen>
+    <dimen name="time_margin">140dp</dimen>
 </resources>
