@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="msg_size">18sp</dimen>
+    <dimen name="text_sz">11sp</dimen>
     <dimen name="font_size">16sp</dimen>
     <dimen name="input_width">250dp</dimen>
     <dimen name="input_height">40dp</dimen>
@@ -8,6 +9,7 @@
     <dimen name="contact_height">70dp</dimen>
     <dimen name="auth_avt">150dp</dimen>
     <dimen name="bar">85dp</dimen>
+    <dimen name="paddin">84dp</dimen>
     <dimen name="margin">32dp</dimen>
     <dimen name="layout_margin">100dp</dimen>
     <dimen name="chat_avatar">50dp</dimen>
