@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="right"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/messageSentTimeCell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        tools:hint="time" />
+
+    <TextView
+        android:id="@+id/messageSentCell"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:textColor="@color/white"
+        android:textAlignment="viewEnd"
+        android:background="@drawable/sent_message_background"
+        android:padding="@dimen/small_margin"
+        android:textSize="@dimen/msg_size"
+        tools:text="@string/textView" />
+</LinearLayout>
