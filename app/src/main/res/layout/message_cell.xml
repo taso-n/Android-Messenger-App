@@ -21,7 +21,7 @@
         android:layout_marginEnd="@dimen/small_margin"
         android:textColor="@color/white"
         android:textAlignment="viewEnd"
-        android:background="@drawable/sent_message_background"
+        android:background="@drawable/my_message_bckg"
         android:padding="@dimen/small_margin"
         android:textSize="@dimen/msg_size"
         tools:text="@string/textView" />

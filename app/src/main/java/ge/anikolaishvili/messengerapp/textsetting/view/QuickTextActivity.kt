@@ -30,7 +30,7 @@ class QuickTextActivity : AppCompatActivity(), TextSettingView {
         binding.personProfession.text = chatModel.interloc?.profession
         binding.messagesIn.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         adapter = TextAdapter()
-        adapter.submitList(chatModel.messages ?: mutableListOf())
+        adapter.push(chatModel.messages ?: mutableListOf())
         binding.messagesIn.adapter = adapter
 
         binding.sendButton.setOnClickListener {
@@ -47,11 +47,11 @@ class QuickTextActivity : AppCompatActivity(), TextSettingView {
     }
 
     override fun show(messageModel: MutableList<MessageModel>) {
-        adapter.submitList(messageModel)
+        adapter.push(messageModel)
     }
 
     override fun display(chat: ChatModel) {
         this.chatModel = chat
-        adapter.submitList(chat.messages ?: mutableListOf())
+        adapter.push(chat.messages ?: mutableListOf())
     }
 }

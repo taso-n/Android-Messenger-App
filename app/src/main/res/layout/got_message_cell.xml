@@ -15,7 +15,7 @@
         android:layout_marginTop="@dimen/small_margin"
         android:textColor="@color/gray"
         android:padding="@dimen/small_margin"
-        android:background="@drawable/received_message_background"/>
+        android:background="@drawable/got_message_bckg"/>
 
     <TextView
         android:id="@+id/messageRecTimeCell"
