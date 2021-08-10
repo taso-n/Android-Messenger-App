@@ -19,9 +19,11 @@ class ContactsModel(private val presenter: ContactsPresenter) : IContactsModel {
         users.get().addOnSuccessListener {
             var users = it.getValue<MutableMap<String, UserModel>>()
 
+            /*
             if (of == null || of.isEmpty()) {
                 if (users != null) users!!.clear()
             }
+             */
 
             if (users != null) {
                 users = users.filter { (_, usr) ->
