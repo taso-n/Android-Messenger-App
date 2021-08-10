@@ -8,11 +8,11 @@ import ge.anikolaishvili.messengerapp.datamodel.MessageModel
 import java.text.SimpleDateFormat
 
 abstract class SingleMessageView(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    abstract fun configure(with: MessageModel)
+    abstract fun proccess(with: MessageModel)
 }
 
 class SentMessageCellViewHolder(itemView: View) : SingleMessageView(itemView) {
-    override fun configure(with: MessageModel) {
+    override fun proccess(with: MessageModel) {
         val formatter = SimpleDateFormat("hh:mm")
 
         val msgSent = itemView.findViewById<TextView>(R.id.messageSentCell)
@@ -24,7 +24,7 @@ class SentMessageCellViewHolder(itemView: View) : SingleMessageView(itemView) {
 }
 
 class ReceivedMessageCellViewHolder(itemView: View) : SingleMessageView(itemView) {
-    override fun configure(with: MessageModel) {
+    override fun proccess(with: MessageModel) {
         val formatter = SimpleDateFormat("hh:mm")
         val msgRec = itemView.findViewById<TextView>(R.id.messageRecCell)
         msgRec.text = with.content

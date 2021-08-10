@@ -23,8 +23,8 @@ class TextAdapter() : RecyclerView.Adapter<SingleMessageView>() {
     }
 
     override fun onBindViewHolder(holder: SingleMessageView, position: Int) {
-        var msg = messageModels[position]
-        holder.configure(msg)
+        val msg = messageModels[position]
+        holder.proccess(msg)
     }
 
     override fun getItemCount(): Int {
@@ -34,7 +34,7 @@ class TextAdapter() : RecyclerView.Adapter<SingleMessageView>() {
 
     override fun getItemViewType(position: Int): Int {
         if (messageModels[position].gotText!!) {
-            1
+            return 1
         }
         return 0
     }
