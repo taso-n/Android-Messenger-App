@@ -11,6 +11,7 @@ import ge.anikolaishvili.messengerapp.contactsfind.ContactClickListener
 import ge.anikolaishvili.messengerapp.contactsfind.ContactsAdapter
 import ge.anikolaishvili.messengerapp.contactsfind.presenter.ContactsPresenter
 import ge.anikolaishvili.messengerapp.databinding.AllContactsListBinding
+import ge.anikolaishvili.messengerapp.textsetting.view.QuickTextActivity
 
 class ContactsActivity : AppCompatActivity(), ContactClickListener, IContactsView {
     private lateinit var binding: AllContactsListBinding
@@ -40,7 +41,7 @@ class ContactsActivity : AppCompatActivity(), ContactClickListener, IContactsVie
     }
 
     override fun didAddChat(of: ChatModel) {
-        // davamatot start activity functional
+        startActivity(Intent(this, QuickTextActivity::class.java).putExtra("ge.anikolaishvili.messengerapp.putextra", of))
     }
 
     override fun displayContacts(friends: MutableList<UserModel>) {

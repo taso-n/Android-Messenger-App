@@ -1,5 +1,6 @@
 package ge.anikolaishvili.messengerapp.recentConversations.view
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,6 +14,7 @@ import ge.anikolaishvili.messengerapp.recentConversations.RCAdapter
 import ge.anikolaishvili.messengerapp.recentConversations.RCListener
 import ge.anikolaishvili.messengerapp.recentConversations.presenter.IRCPresenter
 import ge.anikolaishvili.messengerapp.recentConversations.presenter.RCPresenter
+import ge.anikolaishvili.messengerapp.textsetting.view.QuickTextActivity
 
 class RCView : Fragment(), RCListener, IRCView {
 
@@ -50,7 +52,7 @@ class RCView : Fragment(), RCListener, IRCView {
     }
 
     override fun didChatClick(index: Int) {
-        // gadavides konkretul chatshi
+        startActivity(Intent(context, QuickTextActivity::class.java).putExtra("ge.anikolaishvili.messengerapp.putextra", adapter.getIndex(index)))
     }
 
     override fun displayChats(recentConv: MutableList<ChatModel>) {
