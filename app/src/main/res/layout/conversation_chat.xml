@@ -25,6 +25,12 @@
             android:layout_height="wrap_content"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/auth_avt"
+                android:scaleType="center"
+                android:src="@drawable/background" />
+
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/chatToolbar"
                 android:layout_gravity="bottom"
