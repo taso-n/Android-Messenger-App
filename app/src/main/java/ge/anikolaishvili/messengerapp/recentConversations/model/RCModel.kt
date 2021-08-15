@@ -12,9 +12,9 @@ import ge.anikolaishvili.messengerapp.recentConversations.presenter.RCPresenter
 
 class RCModel (private val presenter: RCPresenter): IRCModel{
 
-    private val database = Firebase.database
-    private val chats = database.getReference("chats")
-    private val users = database.getReference("users")
+    private val db = Firebase.database
+    private val chats = db.getReference("chats")
+    private val users = db.getReference("users")
     private var auth: FirebaseAuth = Firebase.auth
 
     override fun getRecentConv(of: String?) {
@@ -31,6 +31,24 @@ class RCModel (private val presenter: RCPresenter): IRCModel{
         }
     }
 
+    private fun getFilteredData(data:  Map<String, UserModel>, looking: String) : Map<String, UserModel> {
+        var myMap = emptyMap<String, UserModel>().toMutableMap()
+
+        for ((id, user) in data) {
+            if (looking != null && looking != "") {
+                val username = user.email
+                if (username == null || username == "") {
+                    myMap[id] = user
+                } else {
+                    if (!username.contains(looking.toString())) {
+                        myMap[id] = user
+                    }
+                }
+            }
+        }
+        return myMap
+    }
+
     private fun getList(mp: Map<String, String>, of: String?) {
 
         val ids = mp.keys.toList()
@@ -38,24 +56,15 @@ class RCModel (private val presenter: RCPresenter): IRCModel{
 
 
         users.get().addOnSuccessListener { it ->
-            var data = it.getValue<Map<String, UserModel>>()!!.filter { (key, _) ->
+            var data = it.getValue<Map<String, UserModel>>()!!
+
+            data = data.filter { (key, _) ->
                 key in ids
             }.onEach { (id, user) ->
                 user.uid = id
             }
 
-            data = data.filter { (id, user) ->
-                if (of != null && of != "") {
-                    val username = user.email
-                    if (username == null || username == "") {
-                        return@filter false
-                    } else {
-                        return@filter username.contains(of.toString())
-                    }
-                } else {
-                    return@filter true
-                }
-            }
+            data = getFilteredData(data, of.toString())
 
             data.let { tmpMap ->
                 val convIds: List<String> = tmpMap.map { (key, user) -> mp[key].toString() }
@@ -63,8 +72,8 @@ class RCModel (private val presenter: RCPresenter): IRCModel{
                     val chatsMap = cSnap.getValue<Map<String, ChatModel>>()?.filter { (uid, _) ->
                         uid in convIds
                     }?.onEach { (chatUid, chat) ->
-                        chat.uid = chatUid
                         chat.interloc = tmpMap[chatToUser[chatUid]]
+                        chat.uid = chatUid
                     }
 
                     chatsMap?.let {

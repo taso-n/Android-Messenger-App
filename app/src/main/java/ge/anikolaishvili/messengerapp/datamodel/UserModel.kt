@@ -1,5 +1,6 @@
 package ge.anikolaishvili.messengerapp.datamodel
 
+import android.graphics.Bitmap
 import android.os.Parcelable
 import com.google.firebase.database.Exclude
 import com.google.firebase.database.IgnoreExtraProperties
